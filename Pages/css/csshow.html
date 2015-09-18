@@ -1,0 +1,47 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row "><h3>CSS How To...</h3></div>
+                    <div class="row ">
+                        <p class="intro">When a browser reads a style sheet, it will format the document according to 
+the information in the style sheet.</p>
+                        <h2>Three Ways to Insert CSS</h2>
+                        <p>There are three ways of inserting a style sheet:</p>
+                        <ul>
+	<li>External style sheet</li>
+	<li>Internal style sheet</li>
+	<li>Inline style</li>
+</ul>
+                        <h2>External Style Sheet</h2>
+                        <p>&nbsp;With an
+external style sheet, you can change the look of an entire website by changing 
+just one file!</p>
+                        <p>Each page must include a reference to the external style sheet file inside the &lt;link&gt; 
+element. The &lt;link&gt; element goes inside the head section:</p>
+                        <div class="w3-code w3-border notranslate htmlHigh">
+<span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br>
+<span class="highLT">&lt;</span><span class="highELE">link</span> <span class="highATT">rel=</span><span class="highVAL">"stylesheet"</span> <span class="highATT">type=</span><span class="highVAL">"text/css"</span>
+<span class="highATT">href=</span><span class="highVAL">"mystyle.css"</span><span class="highGT">&gt;</span><br>
+<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span></div>
+                        <p>An external style sheet can be written in any text editor. The file should not contain any html tags. 
+The style sheet file must be saved with a .css extension.
+An example of a style sheet file called "myStyle.css", is shown below:</p>
+                        <div class="w3-code w3-border notranslate cssHigh">
+	<span class="highELE">body </span>{<br>&nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span class="highVAL"> lightblue;</span><br>}<br><br><span class="highELE">h1 </span>{<br>&nbsp;&nbsp;&nbsp; 
+	<span class="highATT">color:</span><span class="highVAL"> navy;</span><br>&nbsp;&nbsp;&nbsp; <span class="highATT">margin-left:</span><span class="highVAL"> 20px;</span><br>}</div>
+                        <h2>Internal Style Sheet</h2>
+                        <p>An internal style sheet may be used if one single page has a unique style.</p>
+                        <p>Internal styles are defined within the &lt;style&gt; element, inside the head section 
+of an HTML page:</p>
+                        <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+	<span class="highELE">&lt;head&gt;<br>&lt;style&gt;<br>body </span>{<br>&nbsp;&nbsp;&nbsp; <span class="highATT">background-color:</span><span class="highVAL"> linen;</span><br>}<br><br><span class="highELE">h1 </span>{<br>&nbsp;&nbsp;&nbsp; <span class="highATT">color:</span><span class="highVAL"> maroon;</span><br>&nbsp;&nbsp;&nbsp; <span class="highATT">margin-left:</span><span class="highVAL"> 40px;</span><br>} <br><span class="highELE">&lt;/style&gt;<br>&lt;/head&gt;</span></div>
+</div>
+                    </div>
+        </div>
+    </body>
+</html>

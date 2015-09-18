@@ -1,0 +1,65 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row "><h3>CSS Font</h3></div>
+                    <div class="row ">
+                        <p class="intro">CSS font properties define the font family, boldness, size, and the style of a text.</p>
+                        <h2>Difference Between Serif and Sans-serif Fonts</h2>
+                        <img alt="Serif vs. Sans-serif" src="serif.gif" width="398" height="142">
+                            <h2>CSS Font Families</h2>
+                            <p>In CSS, there are two types of font family names:</p>
+                            <ul>
+	<li><b>generic family</b> - a group of font families with a 
+	similar look (like "Serif" or "Monospace")</li>
+	<li><b>font family</b> - a specific font family (like "Times New Roman" 
+	or "Arial")</li>
+</ul>
+                            <table class="w3-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Generic family</th>
+<th style="width:30%">Font family</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Serif</td>
+<td><span style="font-size:150%;font-family:Times New Roman">Times New Roman</span><br>
+<span style="font-size:150%;font-family:Georgia">Georgia</span></td>
+<td>Serif fonts have small lines at the ends on some characters</td>
+</tr>
+<tr>
+<td>Sans-serif</td>
+<td><span style="font-size:150%;font-family:Arial">Arial</span><br>
+<span style="font-size:150%;font-family:Verdana">Verdana</span></td>
+<td>"Sans" means without - these fonts do not have the 
+lines at the ends of characters</td>
+</tr>
+<tr>
+<td>Monospace</td>
+<td><span style="font-size:150%;font-family:Courier New">Courier New</span><br>
+<span style="font-size:150%;font-family:Lucida Console">Lucida Console</span></td>
+<td>All monospace characters have the same width</td>
+</tr>
+</tbody></table>
+                            <h2>Font Family</h2>
+                            <p>The font family of a text is set with the <code>font-family</code> property.</p>
+                            <p>The <code>font-family</code> property should hold several font names as a "fallback" system. 
+If the browser does not support the first font, it tries the next font.</p>
+                            <p>Start with the font you want, and end with a generic family, to let the 
+browser pick a similar font in the generic family, if no other fonts are 
+available. </p>
+                            <p><b>Note</b>: If the name of a font family is more than one word, it must be in 
+quotation marks, like: "Times New Roman".</p>
+                            <p>More than one font family is specified in a comma-separated list:</p>
+                            <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+<span class="highELE">p </span>{<br>&nbsp;&nbsp;&nbsp; <span class="highATT">font-family:</span><span class="highVAL"> "Times New Roman", Times, serif;</span><br>}
+</div>
+</div>
+                    </div>
+        </div>
+    </body>
+</html>

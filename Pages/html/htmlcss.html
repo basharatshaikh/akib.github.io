@@ -1,0 +1,70 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row "><h3>HTML Styles - CSS</h3></div>
+                    <div class="row ">
+                        <h1>CSS = Styles and Colors</h1>
+                        <h2>Styling HTML with CSS</h2><p>CSS stands for <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+                        <p>Styling can be added to HTML elements in 3 ways:</p>
+                        <ul>
+	<li>Inline - using a <strong>style attribute</strong> in HTML elements</li>
+	<li>Internal - using a <strong>&lt;style&gt; element</strong> in the HTML &lt;head&gt; section</li>
+	<li>External - using one or more <strong>external CSS files</strong></li>
+</ul>
+                        <p>The most common way to add styling, is to keep the styles in separate CSS 
+files. But, in this tutorial, we use internal styling, because it is easier to 
+demonstrate, and easier for you to try it yourself. </p>
+                        <h2>CSS Syntax</h2>
+                        <p>CSS styling has the following syntax:</p>
+                        <div class="w3-example">
+<div class="w3-code notranslate">
+ <em>element</em> {<em> property</em>:<em>value; property:value }</em>
+</div>
+</div>
+                        <p>The <strong>element</strong> is an HTML element name. The <em><strong>property</strong></em> is 
+a CSS property. The <em><strong>value</strong></em> is a CSS value.</p>
+                        <p>Multiple styles are separated with semicolon.</p>
+                        <h2>Inline Styling (Inline CSS)</h2>
+                        <p><strong>Inline styling</strong> is useful for applying a unique style to a single HTML element:</p>
+                        <p>Inline styling uses the <strong>style attribute</strong>.</p>
+                        <p>This inline styling changes the text color of a single heading:</p>
+                        <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ <span class="highLT">&lt;</span><span class="highELE">h1</span> <span class="highATT">style=</span><span class="highVAL">"color:blue"</span><span class="highGT">&gt;</span>This is a Blue Heading<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span>
+</div>
+
+</div>
+                        <h2>Internal Styling (Internal CSS)</h2>
+                        <p>An internal style sheet can be used to define a common style for all HTML elements on a page.</p>
+                        <p><strong>Internal styling</strong> is defined in the <strong>&lt;head&gt;</strong> section of an HTML page, 
+using a <strong>&lt;style&gt;</strong> element:</p>
+                        <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">style</span><span class="highGT">&gt;</span><br>
+	body {background-color:lightgrey}<br>h1&nbsp;&nbsp; {color:blue}<br>p&nbsp;&nbsp;&nbsp; {color:green}<br>
+<span class="highLT">&lt;</span><span class="highELE">/style</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>This is a 
+ heading<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span></div>
+
+</div>
+                        <h2>External Styling (External CSS)</h2>
+                        <p>External style sheet are ideal when the style is applied to many pages.</p>
+                        <p>With external style sheets, you can change the look of an entire web site by changing one file.</p>
+                        <p><strong>External styles</strong> are defined in an external CSS file, and 
+then linked to in the <strong>&lt;head&gt;</strong> section of an HTML page:</p>
+                        <div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span class="highLT">&lt;</span><span class="highELE">!DOCTYPE</span> <span class="highATT">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">html</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">head</span><span class="highGT">&gt;</span><br>
+&nbsp; <span class="highLT">&lt;</span><span class="highELE">link</span> <span class="highATT">rel=</span><span class="highVAL">"stylesheet"</span> <span class="highATT">href=</span><span class="highVAL">"styles.css"</span><span class="highGT">&gt;</span><br>
+<span class="highLT">&lt;</span><span class="highELE">/head</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">body</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">h1</span><span class="highGT">&gt;</span>This is a heading<span class="highLT">&lt;</span><span class="highELE">/h1</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">p</span><span class="highGT">&gt;</span>This is a paragraph.<span class="highLT">&lt;</span><span class="highELE">/p</span><span class="highGT">&gt;</span><br><br><span class="highLT">&lt;</span><span class="highELE">/body</span><span class="highGT">&gt;</span><br><span class="highLT">&lt;</span><span class="highELE">/html</span><span class="highGT">&gt;</span></div>
+
+</div>
+                    </div>
+        </div>
+    </body>
+</html>
